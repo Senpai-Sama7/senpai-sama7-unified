@@ -1,0 +1,18 @@
+[submodule "core/prometheus"]
+	path = core/prometheus
+	url = https://github.com/Senpai-Sama7/prometheus-stack.git
+[submodule "core/agent-orchestration"]
+	path = core/agent-orchestration
+	url = https://github.com/Senpai-Sama7/agent-42-production.git
+[submodule "core/mcp"]
+	path = core/mcp
+	url = https://github.com/Senpai-Sama7/Titanium-MCP.git
+[submodule "apps/jobfit-ai"]
+	path = apps/jobfit-ai
+	url = https://github.com/Senpai-Sama7/JobFit-AI.git
+[submodule "apps/ui-library"]
+	path = apps/ui-library
+	url = https://github.com/Senpai-Sama7/Vibe-Wiki.git
+[submodule "data/document-processing"]
+	path = data/document-processing
+	url = https://github.com/Senpai-Sama7/DocuMancer.git
