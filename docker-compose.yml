@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  prometheus:
+    build: ./core/prometheus
+    ports:
+      - "9090:9090"
+
+  agent-orchestration:
+    build: ./core/agent-orchestration
+    ports:
+      - "8000:8000"
+    environment:
+      ANTHROPIC_API_KEY: ${ANTHROPIC_API_KEY}
+      OPENAI_API_KEY: ${OPENAI_API_KEY}
+
+  jobfit-ai:
+    build: ./apps/jobfit-ai
+    ports:
+      - "3000:3000"
+
+  document-processor:
+    build: ./data/document-processing
+    ports:
+      - "5000:5000"
+
